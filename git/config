@@ -1,0 +1,33 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[user]
+    name = Jesper Wistrom
+    email = theace4k@gmail.com
+[core]
+    editor = nvim
+    autocrlf = input
+   	excludesfile = /Users/jesperwistrom/.config/git/gitignore
+[color]
+    ui = true
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    amend = commit --amend
+    llog = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+[push]
+    default = current
+[fetch]
+    prune = true
+[init]
+    defaultBranch = main
+[credential]
+    helper = cache --timeout=3600
+
